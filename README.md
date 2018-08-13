@@ -18,3 +18,13 @@
 
 ### Application is hosted [Here](https://wordsort.herokuapp.com/)
 * #### Heroku applications sleep whenever there is no incoming traffic for about 30 minutes, therefore user might have to refresh the application a couple of times, if the application does not work in the first attempt.
+
+
+* #### Testing of count and sort functionality: 
+
+*  ![Test image 1](https://github.com/falcon1996/tales/blob/master/test/test.PNG) 
+*  ![Test image 2](https://github.com/falcon1996/tales/blob/master/test/1.PNG) 
+*  ![Test image 3](https://github.com/falcon1996/tales/blob/master/test/2.PNG) 
+*  ![Test image 4](https://github.com/falcon1996/tales/blob/master/test/3.PNG) 
+*  ![Test image 5](https://github.com/falcon1996/tales/blob/master/test/4.PNG) 
+
