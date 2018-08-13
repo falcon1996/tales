@@ -1,16 +1,9 @@
 import React, { Component } from 'react';
 import "isomorphic-fetch";
 import Data from './Input.js';
+import { Navbar } from 'react-bootstrap';
 
 class App extends Component {
-
-  /*
-  
-  Takes text data from /myapi because of CORS using proxy and 
-  converts it into [word, wordFrequency] form.
-  Furthur sends it into Data component for user interactions.
-  
-  */
   
     constructor(props){
     
@@ -24,12 +17,11 @@ class App extends Component {
   componentDidMount(){
     var freqMap = {};
     
-    fetch('/myapi')
+    fetch('https://damp-wave-96092.herokuapp.com/')
       .then( (response) => {return response.json()} )
       .then( (data) =>  {
         console.log('API DATA:');
-        
-        // Converts data into {word: wordFrequency} form.
+        //console.log(data.success);
         
         var words = (data.success).replace(/[.]/g, '').split(/\s/);
         words.forEach(function(w) {
@@ -38,19 +30,17 @@ class App extends Component {
             }
             freqMap[w] += 1;
         });
-        
-        //Converts data into [word,wordFrequency] form [Array(2), Array(2), Array(2), Array(2)]
+        //console.log(freqMap);
         
         var items = Object.keys(freqMap).map(function(key) {
             return [key, freqMap[key]];
         });
         
-        //Performs sorting on the final array
-        
         var solution = items.sort(function(first, second) {
             return second[1] - first[1];
         });
         
+        //console.log(solution[100][0])
         
         this.setState({
           apiData: solution,
@@ -64,6 +54,13 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Navbar>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href="http://terriblytinytales.com/test.txt">Word-Occurance - TTT</a>
+            </Navbar.Brand>
+          </Navbar.Header>
+        </Navbar>
         <Data mydata={this.state.apiData} />
       </div>
     );
