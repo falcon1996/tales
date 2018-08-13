@@ -45,15 +45,6 @@ class Data extends Component {
     
     
     render(){
-        /*        
-        const items = this.state.mydisplay.map( (item,i) => {
-            return(
-                    <li key={i}>'{item[0]}' occurs {item[1]} times
-            		        <br /><br />
-                    </li>
-                );  
-        });*/
-        
         
         
         return (
@@ -93,17 +84,6 @@ class Data extends Component {
           </div>
         );
         
-        
-        /*
-        return(
-            <div>
-                <h3 style={{marginLeft: '30px'}}> <ol style={newStyle}>{items}</ol> </h3>
-                <form onSubmit={this.mysubmit}>
-                    <input placeholder='Number' onChange={this.inputchange} value={this.state.num} className="form-control" />
-                    <button type='submit' className="btn btn-success">Submit!</button>
-                </form>
-            </div>
-        );*/
     }
 }
 
