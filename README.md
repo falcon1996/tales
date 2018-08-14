@@ -1,4 +1,8 @@
 
+## Application is hosted [Here](https://wordsort.herokuapp.com/)
+* ## Heroku applications sleep whenever there is no incoming traffic for about 30 minutes, therefore user might have to refresh the application a couple of times, if the application does not work in the first attempt.
+
+
 * [App](https://github.com/falcon1996/tales/blob/master/words-app/src/App.js) component is loaded first, which sends an API call to a backend route, which provides it with the file content using the callback.
 
 * It furthur splits this file and calculates the occurance of each word in linear time complexity.
@@ -14,10 +18,6 @@
 * In the backend [server.js](https://github.com/falcon1996/tales/blob/master/server.js), fetchs the file hosted at [TTT](http://terriblytinytales.com/test.txt) and utilizing CORS sends it back as a response field.
 
 * Libraries and plugins used: isomorphic-fetch, react, react-bootstrap, express, body-parser, cors.
-
-
-### Application is hosted [Here](https://wordsort.herokuapp.com/)
-* #### Heroku applications sleep whenever there is no incoming traffic for about 30 minutes, therefore user might have to refresh the application a couple of times, if the application does not work in the first attempt.
 
 
 * #### Testing of count and sort functionality: 
