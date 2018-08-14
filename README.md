@@ -27,4 +27,4 @@
 *  ![Test image 3](https://github.com/falcon1996/tales/blob/master/test/2.PNG) 
 *  ![Test image 4](https://github.com/falcon1996/tales/blob/master/test/3.PNG) 
 *  ![Test image 5](https://github.com/falcon1996/tales/blob/master/test/4.PNG) 
-
+*  ![Test image 5](https://github.com/falcon1996/tales/blob/master/test/5.PNG)*For empty string or file with no sentences*
