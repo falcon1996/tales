@@ -29,9 +29,16 @@ class Data extends Component {
     
     mysubmit = (event) => {
         event.preventDefault();
-        
+        let x;
+        // Preventing negative input
+        if(Number(this.state.num) >= 0){
+            x = Number(this.state.num);
+        }
+        else{
+            x = 0;
+        }
         this.setState({
-            mydisplay: this.props.mydata.slice(0,this.state.num),
+            mydisplay: this.props.mydata.slice(1,x+1),
         });
             
     }

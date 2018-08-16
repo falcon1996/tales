@@ -20,7 +20,7 @@ class App extends Component {
     fetch('https://damp-wave-96092.herokuapp.com/')
       .then( (response) => {return response.json()} )
       .then( (data) =>  {
-        console.log('API DATA:');
+        console.log('Terribly Tiny Tales Challenge');
         //console.log(data.success);
         
         var words = (data.success).replace(/[.]/g, '').split(/\s/);
